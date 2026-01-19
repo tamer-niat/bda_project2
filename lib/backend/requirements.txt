@@ -1,0 +1,17 @@
+# FastAPI and Web Framework
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+
+# Database
+mysql-connector-python==8.2.0
+
+# Data Validation
+pydantic[email]==2.5.0
+email-validator==2.1.0
+
+# File Upload Support
+python-multipart==0.0.6
+
+# Optional: For better performance (recommended for production)
+uvloop==0.19.0
+httptools==0.6.1
