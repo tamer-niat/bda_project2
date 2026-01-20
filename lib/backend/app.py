@@ -7,6 +7,7 @@ from mysql.connector import Error
 from contextlib import contextmanager
 import json
 from datetime import datetime, date, time
+import os
 
 app = FastAPI(title="Exam Scheduler API", version="2.0.0")
 
@@ -19,10 +20,11 @@ app.add_middleware(
 )
 
 DB_CONFIG = {
-    "host": "localhost",
-    "user": "root",
-    "password": "",
-    "database": "exam_scheduler_db",
+    "host": os.getenv("MYSQLHOST", "localhost"),
+    "port": int(os.getenv("MYSQLPORT", "3306")),
+    "user": os.getenv("MYSQLUSER", "root"),
+    "password": os.getenv("MYSQLPASSWORD", ""),
+    "database": os.getenv("MYSQL_DATABASE", "exam_scheduler_db"),
     "charset": "utf8mb4"
 }
 
