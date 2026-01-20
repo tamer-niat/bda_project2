@@ -4,8 +4,8 @@ import 'dart:convert';
 import 'dart:async';
 
 class ExamSchedulingController extends GetxController {
-  // API Base URL - UPDATE THIS TO MATCH YOUR BACKEND
-  final String baseUrl = 'http://localhost:8000/api';
+  // API Base URL - Render deployment
+  final String baseUrl = 'https://bda-project2.onrender.com/api';
   
   // Observable state variables
   var selectedSession = 'Session 1 - 2025/2026'.obs;

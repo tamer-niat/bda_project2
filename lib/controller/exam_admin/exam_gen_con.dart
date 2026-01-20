@@ -180,8 +180,8 @@ class TimetableGenerationController extends GetxController {
 
   // BACKEND API CALL
   Future<void> _callAPI() async {
-    // Try localhost first, then 127.0.0.1 if that fails
-    final urls = ['http://localhost:8000', 'http://127.0.0.1:8000'];
+    // Use Render deployment URL
+    final urls = ['https://bda-project2.onrender.com'];
     
     Exception? lastError;
     

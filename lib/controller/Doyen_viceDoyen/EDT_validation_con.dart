@@ -6,8 +6,8 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:bda_project/controller/main_controllers/auth_controller.dart';
 
 class EDTValidationController extends GetxController {
-  // API Configuration
-  final String baseUrl = 'http://localhost:8000/api';
+  // API Configuration - Render deployment
+  final String baseUrl = 'https://bda-project2.onrender.com/api';
   
   // Observable state variables
   var selectedSession = 'Session 1 - 2025/2026'.obs;

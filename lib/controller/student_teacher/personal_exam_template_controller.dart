@@ -6,8 +6,8 @@ import 'dart:convert';
 import 'package:bda_project/controller/main_controllers/auth_controller.dart';
 
 class PersonalExamTimetableController extends GetxController {
-  // API Configuration
-  final String baseUrl = 'http://localhost:8000/api';
+  // API Configuration - Render deployment
+  final String baseUrl = 'https://bda-project2.onrender.com/api';
   
   // User Info
   var userName = 'Ahmed Benali'.obs;

@@ -9,10 +9,8 @@ class AuthController extends GetxController {
   var currentUser = Rxn<User>();
   var errorMessage = ''.obs;
 
-  // API base URL - Change this to your server IP address
-  final String baseUrl = 'http://localhost:8000/api';
-  // For real device: 'http://YOUR_IP:8000/api'
-  // For Android emulator: 'http://10.0.2.2:8000/api'
+  // API base URL - Render deployment
+  final String baseUrl = 'https://bda-project2.onrender.com/api';
 
   // Login method
   Future<bool> login(String email, String password) async {

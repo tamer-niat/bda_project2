@@ -6,8 +6,8 @@ import 'dart:convert';
 import 'package:bda_project/controller/main_controllers/auth_controller.dart';
 
 class DepartmentValidationWorkflowController extends GetxController {
-  // API Configuration
-  final String baseUrl = 'http://localhost:8000/api';
+  // API Configuration - Render deployment
+  final String baseUrl = 'https://bda-project2.onrender.com/api';
   
   // User Info (should be passed from login)
   var userId = 0.obs;
